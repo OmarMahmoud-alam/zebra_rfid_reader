@@ -1,0 +1,31 @@
+PODS:
+  - Flutter (1.0.0)
+  - permission_handler_apple (9.3.0):
+    - Flutter
+  - zebra_rfid_reader_sdk (0.1.0):
+    - Flutter
+    - zebra_rfid_reader_sdk/symbolrfid-sdk (= 0.1.0)
+  - zebra_rfid_reader_sdk/symbolrfid-sdk (0.1.0):
+    - Flutter
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - permission_handler_apple (from `.symlinks/plugins/permission_handler_apple/ios`)
+  - zebra_rfid_reader_sdk (from `.symlinks/plugins/zebra_rfid_reader_sdk/ios`)
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  permission_handler_apple:
+    :path: ".symlinks/plugins/permission_handler_apple/ios"
+  zebra_rfid_reader_sdk:
+    :path: ".symlinks/plugins/zebra_rfid_reader_sdk/ios"
+
+SPEC CHECKSUMS:
+  Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
+  permission_handler_apple: 9878588469a2b0d0fc1e048d9f43605f92e6cec2
+  zebra_rfid_reader_sdk: 5336e4fc983154ec4ec0a08aeb3bb9e841700e17
+
+PODFILE CHECKSUM: c4c93c5f6502fe2754f48404d3594bf779584011
+
+COCOAPODS: 1.15.2
