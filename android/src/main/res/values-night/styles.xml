@@ -1,8 +1,14 @@
-<style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
-    <item name="colorPrimary">@android:color/holo_blue_light</item>
-    <item name="colorPrimaryVariant">@android:color/holo_blue_dark</item>
-    <item name="colorOnPrimary">@android:color/white</item>
-    <item name="colorSecondary">@android:color/holo_green_light</item>
-    <item name="colorSecondaryVariant">@android:color/holo_green_dark</item>
-    <item name="colorOnSecondary">@android:color/black</item>
-</style>
+<resources>
+    <!-- Night mode theme -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge">
+        <!-- Primary colors -->
+        <item name="colorPrimary">@android:color/holo_blue_dark</item>
+        <item name="colorPrimaryVariant">@android:color/holo_blue_bright</item>
+        <item name="colorOnPrimary">@android:color/white</item>
+
+        <!-- Secondary colors -->
+        <item name="colorSecondary">@android:color/holo_green_dark</item>
+        <item name="colorSecondaryVariant">@android:color/holo_green_light</item>
+        <item name="colorOnSecondary">@android:color/white</item>
+    </style>
+</resources>
