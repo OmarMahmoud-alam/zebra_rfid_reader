@@ -1,5 +1,6 @@
 package com.borda.zebra_rfid_reader_sdk
 
+import android.content.Context
 import android.util.Log
 import com.borda.zebra_rfid_reader_sdk.utils.BordaReaderDevice
 import com.borda.zebra_rfid_reader_sdk.utils.ConnectionStatus
@@ -17,7 +18,7 @@ class ZebraRfidReaderSdkPlugin : FlutterPlugin, MethodCallHandler {
 
     private lateinit var methodChannel: MethodChannel
     private var connectionHelper: ZebraConnectionHelper? = null
-    private lateinit var context: android.content.Context
+    private lateinit var context: Context
 
     private lateinit var tagHandlerEvent: EventChannel
     private lateinit var tagFindingEvent: EventChannel
