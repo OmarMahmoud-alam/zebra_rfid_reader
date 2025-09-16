@@ -17,6 +17,7 @@ class ZebraRfidReaderSdkPlugin : FlutterPlugin, MethodCallHandler {
 
     private lateinit var methodChannel: MethodChannel
     private var connectionHelper: ZebraConnectionHelper? = null
+    private lateinit var context: android.content.Context
 
     private lateinit var tagHandlerEvent: EventChannel
     private lateinit var tagFindingEvent: EventChannel
@@ -38,8 +39,8 @@ class ZebraRfidReaderSdkPlugin : FlutterPlugin, MethodCallHandler {
     override fun onAttachedToEngine(binding: FlutterPlugin.FlutterPluginBinding) {
         Log.d(LOG_TAG, "onAttachedToEngine called")
 
+        context = binding.applicationContext
         val messenger = binding.binaryMessenger
-        val context = binding.applicationContext
 
         methodChannel = MethodChannel(messenger, "borda/zebra_rfid_reader_sdk")
         methodChannel.setMethodCallHandler(this)
