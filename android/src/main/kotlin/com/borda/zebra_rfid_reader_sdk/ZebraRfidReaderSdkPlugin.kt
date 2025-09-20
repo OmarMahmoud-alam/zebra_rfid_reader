@@ -11,19 +11,19 @@ import io.flutter.plugin.common.MethodCall
 import io.flutter.plugin.common.MethodChannel
 import io.flutter.plugin.common.MethodChannel.MethodCallHandler
 import io.flutter.plugin.common.MethodChannel.Result
-import io.flutter.plugin.common.BinaryMessenger // Import BinaryMessenger
-import io.flutter.plugin.common.PluginRegistry.Registrar // Import Registrar
-import android.content.Context // Import Context
+//import io.flutter.plugin.common.BinaryMessenger // Import BinaryMessenger
+//import io.flutter.plugin.common.PluginRegistry.Registrar // Import Registrar
+//import android.content.Context // Import Context
 
 /** ZebraRfidReaderSdkPlugin */
 class ZebraRfidReaderSdkPlugin : FlutterPlugin, MethodCallHandler {
-    companion object {
+   /*  companion object {
         @JvmStatic
         fun register(registrar: Registrar) {
             val plugin = ZebraRfidReaderSdkPlugin()
             plugin.initialize(registrar.messenger(), registrar.context())
         }
-    }
+    } */
     /// The MethodChannel that will the communication between Flutter and native Android
     ///
     /// This local reference serves to register the plugin with the Flutter Engine and unregister it
@@ -72,7 +72,7 @@ class ZebraRfidReaderSdkPlugin : FlutterPlugin, MethodCallHandler {
     }
 
 
-
+/* 
     private fun initialize(messenger: BinaryMessenger, context: Context) {
         Log.d(LOG_TAG, "Calllllllledd:::::::")
         methodChannel = MethodChannel(messenger, "borda/zebra_rfid_reader_sdk")
@@ -94,7 +94,7 @@ class ZebraRfidReaderSdkPlugin : FlutterPlugin, MethodCallHandler {
         connectionHelper = ZebraConnectionHelper(context, tagDataEventHandler, tagFindingEventHandler, readTagEventHandler)
         connectionHelperInitializationListener?.onConnectionHelperInitialized()
     }
-
+ */
     override fun onMethodCall(call: MethodCall, result: Result) =
         when (call.method) {
             "connect" -> {
